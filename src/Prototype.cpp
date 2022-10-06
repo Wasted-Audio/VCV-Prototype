@@ -594,7 +594,7 @@ struct Prototype : Module {
 		if (path == "")
 			return "";
 		// HACK check if extension is .pd
-		if (system::getExtension(path) == "pd")
+		if (system::getExtension(path) == ".pd")
 			return settingsPdEditorPath;
 		return settingsEditorPath;
 	}
